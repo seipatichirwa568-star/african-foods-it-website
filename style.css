@@ -1,0 +1,117 @@
+/* General page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #555;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    background-color: white;
+    padding: 25px;
+    min-height: 500px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+/* Lists */
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ddd;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
