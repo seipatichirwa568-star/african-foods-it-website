@@ -3,78 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>African Foods Company - IT Department</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods employee IT portal for policies, support, equipment requests, maintenance and disaster recovery.">
+
+    <title>Home | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>Information Technology Department</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<div id="topLinks">
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</div>
+    <!-- Consistent navigation across the website -->
+    <nav aria-label="Main navigation">
+        <a href="index.html"
+           class="active"
+           aria-current="page">Home</a>
+        <a href="security.html">IT Security</a>
+        <a href="acceptable-use.html">Acceptable Use</a>
+        <a href="acquisition.html">Equipment</a>
+        <a href="helpdesk.html">Help Desk</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="disaster-recovery.html">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <section>
-        <h2>Welcome to the IT Department</h2>
+        <!-- Main welcome section -->
+        <section class="page-banner home-banner">
+            <div class="hero-content">
+                <p class="section-label">
+                    FOUR LOCATIONS. ONE PLACE FOR IT GUIDANCE.
+                </p>
 
-        <p>
-            Welcome to the African Foods Company IT website.
-            This website provides employees with important information
-            about the company's IT policies and procedures.
-        </p>
+                <h2>Good systems. Better working days.</h2>
 
-        <p>
-            The purpose of this website is to help employees understand
-            how company technology should be used and what to do when
-            technical problems occur.
-            <hr>
-            <img src="c:\Users\Letlhogonolo\Downloads\images.jpg" alt="African Foods Company" class="website-image">
-        </p>
-    </section>
+                <p>
+                    Welcome to the African Foods IT portal.
+                    Find the guidance you need to work securely,
+                    request equipment and get help when technology
+                    interrupts your day.
+                </p>
 
-    <section>
-        <h2>IT Policies and Procedures</h2>
+                <div class="hero-actions">
+                    <a href="#policy-guides" class="action-link">
+                        Explore the policies &rarr;
+                    </a>
 
-        <ul>
-            <li>IT Security Policy</li>
-            <li>Acceptable Use Policy</li>
-            <li>IT Equipment Acquisition Procedure</li>
-            <li>Help Desk Procedure</li>
-            <li>Network Maintenance Procedure</li>
-            <li>Disaster Recovery Plan</li>
-        </ul>
-    </section>
+                    <a href="helpdesk.html" class="action-link">
+                        I need IT help &rarr;
+                    </a>
+                </div>
+            </div>
 
-    <section>
-        <h2>Company Locations</h2>
+            <!-- CSS will provide the floating visual effects -->
+            <div class="hero-highlights"
+                 aria-label="Main areas of IT guidance">
 
-        <p>The company operates from four locations:</p>
+                <div class="floating-card">
+                    <span class="card-number">01</span>
+                    <h3>Protect your work</h3>
+                    <p>Understand account and information security.</p>
+                </div>
 
-        <ul>
-            <li>Cape Town Head Office</li>
-            <li>Durban Branch</li>
-            <li>Gqeberha Branch</li>
-            <li>Polokwane Branch</li>
-        </ul>
-    </section>
+                <div class="floating-card">
+                    <span class="card-number">02</span>
+                    <h3>Know the process</h3>
+                    <p>Follow clear support and approval procedures.</p>
+                </div>
 
-</main>
+                <div class="floating-card">
+                    <span class="card-number">03</span>
+                    <h3>Prepare for disruption</h3>
+                    <p>Find the right recovery guidance.</p>
+                </div>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+            </div>
+        </section>
+
+        <section class="policy-section">
+            <h3>Supporting the people behind African Foods</h3>
+
+            <p>
+                African Foods markets and exports South African food
+                products. Its employees depend on technology to
+                process orders, coordinate shipping, manage stock
+                and carry out administrative work.
+            </p>
+
+            <p>
+                This portal brings the proposed IT policies and
+                procedures together so employees at each location
+                can find consistent guidance.
+            </p>
+
+            <figure class="company-image">
+                <img src="images.jpg"
+                     alt="African Foods company illustration"
+                     class="website-image"
+                     loading="lazy">
+
+                <figcaption>
+                    IT guidance supporting work across all four locations.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Direct links to common tasks -->
+        <section class="quick-actions policy-section">
+            <h3>What do you need to do?</h3>
+
+            <div class="quick-link-grid">
+                <a href="security.html" class="quick-link">
+                    Protect my account &rarr;
+                </a>
+
+                <a href="acquisition.html" class="quick-link">
+                    Request equipment &rarr;
+                </a>
+
+                <a href="helpdesk.html" class="quick-link">
+                    Report a problem &rarr;
+                </a>
+
+                <a href="disaster-recovery.html" class="quick-link">
+                    Find recovery guidance &rarr;
+                </a>
+            </div>
+        </section>
+
+        <!-- Policy cards -->
+        <section id="policy-guides" class="policy-section">
+            <p class="section-label">THE POLICY LIBRARY</p>
+
+            <h3>Clear guidance, all in one place.</h3>
+
+            <p>
+                Choose a guide to read the proposed rules,
+                responsibilities and steps relevant to your work.
+            </p>
+
+            <div class="policy-grid">
+
+                <article class="policy-card">
+                    <span class="card-number">01</span>
+
+                    <h4>IT Security</h4>
+
+                    <p>
+                        Learn how to protect accounts, company devices
+                        and information, and how to report suspicious
+                        activity.
+                    </p>
+
+                    <a href="security.html" class="action-link">
+                        Read the security policy &rarr;
+                    </a>
+                </article>
+
+                <article class="policy-card">
+                    <span class="card-number">02</span>
+
+                    <h4>Acceptable Use</h4>
+
+                    <p>
+                        Understand the responsible use of email,
+                        internet access, software and shared
+                        company resources.
+                    </p>
+
+                    <a href="acceptable-use.html" class="action-link">
+                        Read the acceptable use policy &rarr;
+                    </a>
+                </article>
+
+                <article class="policy-card">
+                    <span class="card-number">03</span>
+
+                    <h4>Equipment Acquisition</h4>
+
+                    <p>
+                        Follow the process for requesting equipment,
+                        obtaining approvals and recording the asset
+                        before handover.
+                    </p>
+
+                    <a href="acquisition.html" class="action-link">
+                        View the acquisition procedure &rarr;
+                    </a>
+                </article>
+
+                <article class="policy-card">
+                    <span class="card-number">04</span>
+
+                    <h4>Help Desk</h4>
+
+                    <p>
+                        Prepare a useful problem report and understand
+                        how incidents are prioritised, investigated
+                        and escalated.
+                    </p>
+
+                    <a href="helpdesk.html" class="action-link">
+                        View the help desk procedure &rarr;
+                    </a>
+                </article>
+
+                <article class="policy-card">
+                    <span class="card-number">05</span>
+
+                    <h4>Network Maintenance</h4>
+
+                    <p>
+                        Review the proposed schedule for routine
+                        checks, backups, updates and controlled
+                        configuration changes.
+                    </p>
+
+                    <a href="maintenance.html" class="action-link">
+                        View the maintenance schedule &rarr;
+                    </a>
+                </article>
+
+                <article class="policy-card">
+                    <span class="card-number">06</span>
+
+                    <h4>Disaster Recovery</h4>
+
+                    <p>
+                        Find recovery responsibilities and procedures
+                        for outages, equipment failures, cyberattacks
+                        and lost information.
+                    </p>
+
+                    <a href="disaster-recovery.html" class="action-link">
+                        Explore the recovery plans &rarr;
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Company scenario information -->
+        <section id="locations" class="policy-section">
+            <p class="section-label">OUR COMPANY LOCATIONS</p>
+
+            <h3>Connected work across four locations.</h3>
+
+            <p>
+                The same proposed procedures apply across the company.
+                Branch contacts help coordinate local access,
+                problem reports and service updates with IT.
+            </p>
+
+            <div class="branch-grid">
+
+                <article class="branch-card">
+                    <p class="section-label">HEAD OFFICE</p>
+
+                    <h4>Cape Town</h4>
+
+                    <p>
+                        The head office hosts the central database
+                        server and includes shipping, sales,
+                        stock control and administrative staff.
+                    </p>
+                </article>
+
+                <article class="branch-card">
+                    <p class="section-label">EXISTING BRANCH</p>
+
+                    <h4>Durban</h4>
+
+                    <p>
+                        Staff handle shipping, sales, stock control
+                        and operations. Reliable access to central
+                        services supports their daily work.
+                    </p>
+                </article>
+
+                <article class="branch-card">
+                    <p class="section-label">EXPANSION BRANCH</p>
+
+                    <h4>Gqeberha</h4>
+
+                    <p>
+                        One of the company's new locations.
+                        Employees follow the shared security,
+                        support and equipment procedures.
+                    </p>
+                </article>
+
+                <article class="branch-card">
+                    <p class="section-label">EXPANSION BRANCH</p>
+
+                    <h4>Polokwane</h4>
+
+                    <p>
+                        Another new company location, supported
+                        through consistent IT guidance and
+                        communication with the central team.
+                    </p>
+                </article>
+
+            </div>
+
+            <p class="section-note">
+                These descriptions relate to the assignment scenario.
+                They do not show live network or service status.
+            </p>
+        </section>
+
+        <section class="policy-section">
+            <h3>A few habits that make a difference</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Lock your screen.</strong>
+                    Protect information when you leave your desk.
+                    On a Windows computer, press
+                    <kbd>Windows</kbd> + <kbd>L</kbd>.
+                </li>
+
+                <li>
+                    <strong>Keep passwords private.</strong>
+                    Do not include them in support reports or
+                    share them with colleagues.
+                </li>
+
+                <li>
+                    <strong>Report problems clearly.</strong>
+                    Include your branch, the affected device,
+                    the error and the effect on your work.
+                </li>
+
+                <li>
+                    <strong>Check before buying.</strong>
+                    Equipment purchases need the required technical,
+                    budget and management approvals.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Expandable FAQs work without additional JavaScript -->
+        <section id="frequent-questions" class="policy-section">
+            <h3>Frequently asked questions</h3>
+
+            <details class="example-card">
+                <summary>
+                    Can I submit a support ticket through this website?
+                </summary>
+
+                <p>
+                    No. This version explains how to prepare and
+                    report a problem. It does not send information
+                    to an IT team or create a live support ticket.
+                    Use the company's approved reporting channel.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    Who approves a new computer?
+                </summary>
+
+                <p>
+                    Your manager confirms the need, IT assesses
+                    suitability and Finance checks the budget.
+                    Company management gives final purchasing
+                    approval before an order is placed.
+                </p>
+
+                <a href="acquisition.html" class="action-link">
+                    Read the full procedure &rarr;
+                </a>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    What should I do if the whole branch loses access?
+                </summary>
+
+                <p>
+                    Report the branch-wide impact through an available
+                    approved channel. The branch contact should
+                    coordinate reporting when normal network access
+                    is unavailable. IT will assess the fault and
+                    arrange the appropriate escalation.
+                </p>
+
+                <a href="helpdesk.html" class="action-link">
+                    Read the help desk guidance &rarr;
+                </a>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    Does completing a checklist approve a request?
+                </summary>
+
+                <p>
+                    No. The checklists help you prepare or review
+                    your understanding. They do not approve purchases,
+                    submit acknowledgements or confirm that recovery
+                    actions have been performed.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    Where can I find the maintenance responsibilities?
+                </summary>
+
+                <p>
+                    The maintenance page identifies proposed daily,
+                    weekly, monthly and quarterly checks, as well
+                    as tasks triggered by changes or staff movements.
+                </p>
+
+                <a href="maintenance.html" class="action-link">
+                    View maintenance responsibilities &rarr;
+                </a>
+            </details>
+        </section>
+
+        <section class="next-guide">
+            <h3>Not sure where to start?</h3>
+
+            <p>
+                Begin with the IT security policy for everyday
+                protection, or visit the help desk page if a
+                technical problem is interrupting your work.
+            </p>
+
+            <div class="hero-actions">
+                <a href="security.html" class="action-link">
+                    Read IT security &rarr;
+                </a>
+
+                <a href="helpdesk.html" class="action-link">
+                    Open the help desk guide &rarr;
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>

@@ -3,70 +3,551 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Help Desk</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods help desk procedures, incident priorities and support responsibilities.">
+
+    <title>Help Desk | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>IT Help Desk Procedure</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</nav>
+    <!-- Main website navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="security.html">IT Security</a>
+        <a href="acceptable-use.html">Acceptable Use</a>
+        <a href="acquisition.html">Equipment</a>
+        <a href="helpdesk.html"
+           class="active"
+           aria-current="page">Help Desk</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="disaster-recovery.html">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <h2>IT Help Desk Procedure</h2>
+        <section class="page-banner">
+            <p class="section-label">REPORT. RESOLVE. RESUME.</p>
 
-    <p>
-        Employees should report technical problems to the IT help desk
-        instead of making major changes to their computers or network
-        settings themselves.
-    </p>
+            <h2>Get the right help to keep work moving.</h2>
 
-    <h3>Help Desk Process</h3>
+            <p>
+                A clear problem report helps IT investigate more quickly.
+                This guide explains how African Foods employees should
+                report faults, how requests are prioritised and when
+                problems are escalated.
+            </p>
 
-    <ol>
-        <li>User reports the problem.</li>
-        <li>Help desk creates a support ticket.</li>
-        <li>Priority is assigned.</li>
-        <li>Technician investigates the problem.</li>
-        <li>Problem is resolved.</li>
-        <li>User confirms the solution.</li>
-        <li>Ticket is closed.</li>
-    </ol>
+            <div class="policy-details">
+                <p>
+                    <strong>Applies to:</strong>
+                    Cape Town, Durban, Gqeberha and Polokwane
+                </p>
 
-    <h3>Priority</h3>
+                <p>
+                    <strong>First point of contact:</strong>
+                    IT Support Technician / Help Desk
+                </p>
 
-    <p>
-        Problems affecting an entire branch or important company
-        services should receive a higher priority than minor problems
-        affecting one employee.
-    </p>
+                <p>
+                    <strong>Procedure owner:</strong> IT Manager
+                </p>
 
-    <h3>Important</h3>
+                <p>
+                    <strong>Status:</strong>
+                    Proposed procedure for the African Foods assignment
+                </p>
+            </div>
 
-    <p>
-        Employees should provide as much information as possible when
-        reporting a technical problem. This helps the IT technician
-        identify and resolve the issue faster.
-    </p>
+            <button type="button"
+                    id="print-policy"
+                    class="action-button"
+                    hidden>
+                Print this procedure
+            </button>
+        </section>
 
-</main>
+        <section class="page-shortcuts">
+            <h3>On this page</h3>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+            <ul>
+                <li><a href="#reporting">Reporting a problem</a></li>
+                <li><a href="#report-details">Information to provide</a></li>
+                <li><a href="#support-process">Support procedure</a></li>
+                <li><a href="#priorities">Incident priorities</a></li>
+                <li><a href="#escalation">Escalation responsibilities</a></li>
+                <li><a href="#examples">Workplace examples</a></li>
+                <li><a href="#report-check">Reporting checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="reporting" class="policy-section">
+            <h3>1. Reporting a technical problem</h3>
+
+            <p>
+                Employees should report computer, printer, application
+                and network problems through the company's approved
+                help desk channel. Avoid making major changes to
+                devices or network settings without IT instructions.
+            </p>
+
+            <p>
+                If a network outage prevents normal reporting, the
+                nominated branch contact should use the agreed
+                alternative telephone channel and explain the
+                effect on the branch.
+            </p>
+
+            <div class="important-notice">
+                <h4>Suspected security incident?</h4>
+
+                <p>
+                    Report suspicious activity, lost devices or
+                    suspected account compromise immediately.
+                    Do not wait for routine troubleshooting or
+                    share your password with anyone.
+                </p>
+            </div>
+
+            <p>
+                This academic website provides guidance. It does not
+                submit support tickets or contact an IT team.
+                Real support contact details must be supplied by
+                the company before operational use.
+            </p>
+        </section>
+
+        <section id="report-details" class="policy-section">
+            <h3>2. Information to include in your report</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Your details:</strong>
+                    Name, department, branch and an approved way
+                    for IT to contact you.
+                </li>
+
+                <li>
+                    <strong>Affected equipment:</strong>
+                    The device name or asset number, where available.
+                </li>
+
+                <li>
+                    <strong>Affected service:</strong>
+                    Identify the application, printer, connection
+                    or account involved.
+                </li>
+
+                <li>
+                    <strong>Problem description:</strong>
+                    Explain what you were trying to do and what
+                    happened instead.
+                </li>
+
+                <li>
+                    <strong>Error details:</strong>
+                    Include the exact error message or a screenshot
+                    that does not reveal confidential information.
+                </li>
+
+                <li>
+                    <strong>Time and frequency:</strong>
+                    State when the problem started and whether
+                    it happens continuously or occasionally.
+                </li>
+
+                <li>
+                    <strong>Business impact:</strong>
+                    Explain which work has stopped, how many people
+                    are affected and whether a workaround exists.
+                </li>
+
+                <li>
+                    <strong>Checks already completed:</strong>
+                    Describe any approved steps you have tried.
+                    Do not include passwords or unnecessary
+                    customer or employee records.
+                </li>
+            </ul>
+        </section>
+
+        <section id="support-process" class="policy-section">
+            <h3>3. Help desk procedure</h3>
+
+            <ol class="procedure-list">
+                <li>
+                    <h4>Receive the report</h4>
+                    <p>
+                        The IT Support Technician collects the
+                        employee's details and checks that the
+                        problem description is clear.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Create a support record</h4>
+                    <p>
+                        The help desk assigns a unique ticket
+                        reference and records the branch, device,
+                        symptoms and reporting time. Reports linked
+                        to the same outage should be connected.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Assess impact and urgency</h4>
+                    <p>
+                        The technician determines how many employees
+                        are affected, which business activity is
+                        interrupted and whether a temporary
+                        workaround is available.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Assign and investigate</h4>
+                    <p>
+                        A suitable technician carries out approved
+                        troubleshooting and records the checks
+                        performed. Any changes must remain within
+                        the technician's authority.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Escalate when necessary</h4>
+                    <p>
+                        Network faults that cannot be resolved
+                        through first-line checks are referred to
+                        the Network Administrator. Security concerns
+                        and major disruptions are reported to
+                        the IT Manager promptly.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Keep employees informed</h4>
+                    <p>
+                        The help desk communicates progress,
+                        outstanding issues and approved workarounds.
+                        Branch-wide updates should be coordinated
+                        through the nominated branch contact.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Test and confirm the solution</h4>
+                    <p>
+                        The technician tests the affected service
+                        and asks the employee to confirm that the
+                        original task can now be completed.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Close and review the ticket</h4>
+                    <p>
+                        Record the cause where known, actions taken,
+                        test results and user confirmation. Repeated
+                        incidents should be reviewed to identify
+                        whether a permanent correction is needed.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="priorities" class="policy-section">
+            <h3>4. How incidents are prioritised</h3>
+
+            <p>
+                Priority depends on business impact and urgency.
+                The following categories are proposed for African Foods;
+                they are not guaranteed response or resolution times.
+            </p>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>
+                        Proposed help desk priority categories
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Required response</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Critical</th>
+                            <td>
+                                Central services are unavailable to
+                                several branches, or a suspected
+                                serious security incident occurs.
+                            </td>
+                            <td>
+                                Escalate immediately to the IT Manager
+                                and relevant technical staff.
+                                Assess whether coordinated recovery
+                                is required.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">High</th>
+                            <td>
+                                An entire branch loses access, or
+                                time-sensitive business work stops
+                                without a suitable workaround.
+                            </td>
+                            <td>
+                                Arrange urgent investigation and
+                                communicate updates to the
+                                affected employees.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Normal</th>
+                            <td>
+                                One employee has a device or
+                                application fault and a reasonable
+                                workaround is available.
+                            </td>
+                            <td>
+                                Assign the incident through the
+                                normal support queue and confirm
+                                the workaround is suitable.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Low</th>
+                            <td>
+                                An employee requests general guidance
+                                or a planned service that does not
+                                interrupt current work.
+                            </td>
+                            <td>
+                                Schedule assistance according to
+                                workload and business requirements.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                The help desk must review the priority if the impact
+                changes. A problem affecting one employee may still
+                require urgent attention if it stops a critical task.
+            </p>
+        </section>
+
+        <section id="escalation" class="policy-section">
+            <h3>5. Escalation responsibilities</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Junior IT Support Technician:</strong>
+                    Assists with basic checks under supervision
+                    and refers unfamiliar problems to the
+                    IT Support Technician.
+                </li>
+
+                <li>
+                    <strong>IT Support Technician:</strong>
+                    Owns the support record, performs first-line
+                    troubleshooting and keeps the employee informed.
+                </li>
+
+                <li>
+                    <strong>Network Administrator:</strong>
+                    Investigates escalated routing, switching,
+                    wireless and central connectivity problems.
+                </li>
+
+                <li>
+                    <strong>IT Manager:</strong>
+                    Coordinates major incidents, security concerns,
+                    resource decisions and management communication.
+                </li>
+
+                <li>
+                    <strong>Approved service provider:</strong>
+                    Assists with external connection faults or
+                    specialist problems referred by authorised IT staff.
+                </li>
+            </ul>
+
+            <p>
+                An escalation must include the ticket reference,
+                symptoms, business impact and checks already performed.
+                The help desk remains responsible for coordinating
+                user updates unless another owner is explicitly assigned.
+            </p>
+        </section>
+
+        <section id="examples" class="policy-section">
+            <h3>6. Workplace examples</h3>
+
+            <p>Select an example to see how the procedure applies.</p>
+
+            <details class="example-card">
+                <summary>
+                    All Durban employees cannot access the central system.
+                </summary>
+
+                <p>
+                    The branch contact reports the shared problem
+                    and identifies the affected work. The help desk
+                    links related reports and refers the connection
+                    fault to the Network Administrator.
+                </p>
+
+                <p>
+                    This would normally be treated as high priority.
+                    If other branches or central services are also
+                    affected, the priority should be reassessed.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    One employee cannot print, but another approved
+                    printer is available.
+                </summary>
+
+                <p>
+                    The help desk records the device, printer and
+                    error details. The technician checks the fault
+                    and confirms whether the alternative printer
+                    is suitable for the employee's work.
+                </p>
+
+                <p>
+                    The incident may be handled as normal priority
+                    while the approved workaround is available.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    An employee notices unexpected account activity.
+                </summary>
+
+                <p>
+                    The employee reports it immediately without
+                    sharing their password. The help desk refers
+                    the concern to the IT Manager and authorised
+                    technical staff for assessment and containment.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    The same application fault keeps returning.
+                </summary>
+
+                <p>
+                    The technician links the earlier ticket references
+                    and records the repeated symptoms. The IT team
+                    should investigate the underlying cause rather
+                    than repeatedly closing the same fault without
+                    a lasting solution.
+                </p>
+            </details>
+        </section>
+
+        <!-- Uses the existing shared checklist JavaScript -->
+        <section id="report-check"
+                 class="policy-section checklist-section">
+            <h3>7. Is your problem report ready?</h3>
+
+            <p>
+                This personal checklist helps you prepare.
+                It does not submit a ticket, and your selections
+                are not saved by this website.
+            </p>
+
+            <div class="policy-checklist">
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have identified my branch and the affected
+                        device or service.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have explained the error and when
+                        the problem started.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have described the effect on work and
+                        how many people are affected.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have excluded passwords and unnecessary
+                        confidential information.
+                    </label>
+                </p>
+            </div>
+
+            <p id="checklist-progress" role="status" hidden>
+                0 of 4 items checked.
+            </p>
+
+            <button type="button"
+                    id="reset-checklist"
+                    class="secondary-button"
+                    hidden>
+                Reset checklist
+            </button>
+        </section>
+
+        <section class="next-guide">
+            <h3>Dealing with a major disruption?</h3>
+
+            <p>
+                The disaster recovery plan explains recovery roles,
+                incident procedures and checks before services
+                return to normal.
+            </p>
+
+            <a href="disaster-recovery.html" class="action-link">
+                Read the disaster recovery plan &rarr;
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>

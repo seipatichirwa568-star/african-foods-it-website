@@ -1,66 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network Maintenance - African Foods Company</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods network maintenance schedule, task responsibilities and change procedures.">
+
+    <title>Network Maintenance | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>Network Maintenance Procedure</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</nav>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="security.html">IT Security</a>
+        <a href="acceptable-use.html">Acceptable Use</a>
+        <a href="acquisition.html">Equipment</a>
+        <a href="helpdesk.html">Help Desk</a>
+        <a href="maintenance.html"
+           class="active"
+           aria-current="page">Maintenance</a>
+        <a href="disaster-recovery.html">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <h2>Network Maintenance Procedure</h2>
+        <section class="page-banner">
+            <p class="section-label">CHECK. MAINTAIN. DOCUMENT.</p>
 
-    <p>
-        Regular network maintenance is important to keep the company's
-        IT infrastructure reliable and secure.
-    </p>
+            <h2>Keep everyday work running smoothly.</h2>
 
-    <h3>Maintenance Tasks</h3>
+            <p>
+                Regular maintenance helps the IT team identify
+                problems early, protect important information and
+                manage changes without unnecessary disruption.
+            </p>
 
-    <ul>
-        <li>Check routers and switches.</li>
-        <li>Back up network configurations.</li>
-        <li>Check server health.</li>
-        <li>Install security updates.</li>
-        <li>Check wireless access points.</li>
-        <li>Monitor network performance.</li>
-        <li>Inspect cables and connections.</li>
-        <li>Remove unused user accounts.</li>
-        <li>Check backup systems.</li>
-        <li>Document major configuration changes.</li>
-    </ul>
+            <div class="policy-details">
+                <p>
+                    <strong>Applies to:</strong>
+                    Cape Town, Durban, Gqeberha and Polokwane
+                </p>
 
-    <h3>Maintenance Schedule</h3>
+                <p>
+                    <strong>Procedure owner:</strong> IT Manager
+                </p>
 
-    <p>
-        Maintenance should be planned so that important business
-        activities are interrupted as little as possible.
-    </p>
+                <p>
+                    <strong>Main technical roles:</strong>
+                    Network Administrator and IT Support Technician
+                </p>
 
-</main>
+                <p>
+                    <strong>Status:</strong>
+                    Proposed procedure for the African Foods assignment
+                </p>
+            </div>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+            <button type="button"
+                    id="print-policy"
+                    class="action-button"
+                    hidden>
+                Print this procedure
+            </button>
+        </section>
+
+        <section class="page-shortcuts">
+            <h3>On this page</h3>
+
+            <ul>
+                <li><a href="#purpose">Purpose and scope</a></li>
+                <li><a href="#schedule">Maintenance schedule</a></li>
+                <li><a href="#maintenance-tasks">What the checks involve</a></li>
+                <li><a href="#change-process">Planning and completing changes</a></li>
+                <li><a href="#records">Maintenance records</a></li>
+                <li><a href="#examples">Workplace examples</a></li>
+                <li><a href="#readiness">Preparation checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="purpose" class="policy-section">
+            <h3>1. Purpose and scope</h3>
+
+            <p>
+                This procedure covers routine checks and authorised
+                maintenance of network devices, central services,
+                wireless access, backups and related access records.
+            </p>
+
+            <p>
+                African Foods depends on communication between its
+                branches and the Cape Town head office. Maintenance
+                should therefore consider both the local effect of
+                a change and its effect on other locations.
+            </p>
+
+            <p>
+                Our group proposes a maintenance schedule that assigns
+                tasks to specific roles. The schedule should be adjusted
+                after the company reviews its workload and operational needs.
+            </p>
+        </section>
+
+        <!-- Matches the revised schedule in the written report -->
+        <section id="schedule" class="policy-section">
+            <h3>2. Proposed maintenance schedule</h3>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>
+                        Maintenance frequency, activities and responsible roles
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Frequency or trigger</th>
+                            <th scope="col">Maintenance activity</th>
+                            <th scope="col">Responsible role</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Daily</th>
+                            <td>
+                                Review central service availability,
+                                backup results and reported branch
+                                connection problems.
+                            </td>
+                            <td>Network Administrator</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Weekly</th>
+                            <td>
+                                Review network device status,
+                                investigate repeated faults and
+                                confirm configuration backups
+                                are available.
+                            </td>
+                            <td>Network Administrator</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Monthly</th>
+                            <td>
+                                Review asset records, outstanding
+                                support issues and applicable updates.
+                                Schedule approved maintenance
+                                where required.
+                            </td>
+                            <td>
+                                IT Support Technician and
+                                Network Administrator
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Quarterly</th>
+                            <td>
+                                Perform a sample restoration test,
+                                review access with department managers
+                                and check network documentation.
+                            </td>
+                            <td>
+                                IT team, coordinated by the IT Manager
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Before significant changes</th>
+                            <td>
+                                Back up the affected configuration,
+                                assess business impact and document
+                                a rollback method.
+                            </td>
+                            <td>Person implementing the change</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">After changes</th>
+                            <td>
+                                Test affected services, update records
+                                and confirm service availability
+                                with users.
+                            </td>
+                            <td>
+                                Implementing technician and affected users
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">When staff join, move or leave</th>
+                            <td>
+                                Update accounts and equipment records
+                                following an authorised instruction.
+                            </td>
+                            <td>IT Support Technician</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                This schedule is a proposed working arrangement.
+                Urgent faults and significant security concerns
+                must be assessed when reported rather than left
+                until the next scheduled review.
+            </p>
+        </section>
+
+        <section id="maintenance-tasks" class="policy-section">
+            <h3>3. What the maintenance checks involve</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Routers and switches:</strong>
+                    Review device and interface status, investigate
+                    unexpected disconnections and compare relevant
+                    settings with the approved configuration records.
+                </li>
+
+                <li>
+                    <strong>Central services:</strong>
+                    Check that required services are available and
+                    review reported faults, storage capacity and
+                    relevant alerts.
+                </li>
+
+                <li>
+                    <strong>Wireless access:</strong>
+                    Review access point status and investigate
+                    connection or coverage problems reported
+                    by employees.
+                </li>
+
+                <li>
+                    <strong>Configuration backups:</strong>
+                    Confirm that approved device configurations
+                    have recoverable copies and that authorised
+                    staff can locate them when needed.
+                </li>
+
+                <li>
+                    <strong>Backup results:</strong>
+                    Investigate failed or incomplete backup jobs.
+                    Record corrective action and include restoration
+                    testing in the proposed quarterly checks.
+                </li>
+
+                <li>
+                    <strong>Updates:</strong>
+                    Assess applicable updates, compatibility and
+                    potential business disruption before scheduling
+                    authorised installation.
+                </li>
+
+                <li>
+                    <strong>Physical connections:</strong>
+                    Inspect accessible cables and connections
+                    during relevant checks or site visits.
+                    Escalate damaged or unsafe equipment.
+                </li>
+
+                <li>
+                    <strong>User access:</strong>
+                    Review access with the responsible managers.
+                    Update or remove access following authorised
+                    instructions when employees change roles or leave.
+                </li>
+
+                <li>
+                    <strong>Documentation:</strong>
+                    Keep asset records, network diagrams and
+                    configuration information consistent with
+                    approved changes.
+                </li>
+            </ul>
+        </section>
+
+        <section id="change-process" class="policy-section">
+            <h3>4. Planning and completing maintenance changes</h3>
+
+            <p>
+                Maintenance that may interrupt services must be
+                approved by the IT Manager. Branch contacts must
+                receive advance notice explaining which services
+                will be affected and when work is expected to take place.
+            </p>
+
+            <ol class="procedure-list">
+                <li>
+                    <h4>Define the work</h4>
+                    <p>
+                        The implementing technician identifies
+                        the affected equipment, the reason for
+                        the change and the expected result.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Assess the business impact</h4>
+                    <p>
+                        Identify which branches, users and services
+                        may be interrupted. Consider important
+                        activities such as order processing
+                        before selecting a maintenance window.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Prepare the recovery method</h4>
+                    <p>
+                        Back up the affected configuration and
+                        document how to return to the previous
+                        approved state if the change fails.
+                        Check that the required recovery resources
+                        are available.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Obtain approval and notify users</h4>
+                    <p>
+                        Submit the proposed work to the IT Manager
+                        where approval is required. Inform branch
+                        contacts of the expected interruption,
+                        planned timing and reporting arrangements.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Carry out the approved work</h4>
+                    <p>
+                        Follow the agreed steps and record the
+                        actions taken. Avoid adding unrelated
+                        changes during the maintenance window.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Test the affected services</h4>
+                    <p>
+                        Check the relevant connections and
+                        applications. Ask affected users to confirm
+                        that their normal tasks can be completed.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Record the result and communicate closure</h4>
+                    <p>
+                        Update the maintenance record and relevant
+                        documentation. Inform branch contacts when
+                        services are available and explain any
+                        remaining limitations or follow-up work.
+                    </p>
+                </li>
+            </ol>
+
+            <div class="important-notice">
+                <h4>If the change causes a serious problem</h4>
+
+                <p>
+                    The technician must stop further changes,
+                    inform the IT Manager and use the approved
+                    rollback method where appropriate. The
+                    maintenance record must state what was changed,
+                    the checks completed and any follow-up work required.
+                </p>
+            </div>
+        </section>
+
+        <section id="records" class="policy-section">
+            <h3>5. Information to record</h3>
+
+            <p>
+                A maintenance record helps the next technician
+                understand what happened and provides evidence
+                for reviewing repeated problems.
+            </p>
+
+            <ul class="policy-list">
+                <li>
+                    The date, branch and affected device or service.
+                </li>
+
+                <li>
+                    The reason for the work and the related
+                    incident or change reference.
+                </li>
+
+                <li>
+                    The technician responsible and any required approval.
+                </li>
+
+                <li>
+                    The configuration backup reference and
+                    planned rollback method.
+                </li>
+
+                <li>
+                    The work performed, including relevant
+                    settings or software versions changed.
+                </li>
+
+                <li>
+                    The tests completed and their actual results.
+                </li>
+
+                <li>
+                    User confirmation, outstanding limitations
+                    and assigned follow-up actions.
+                </li>
+            </ul>
+
+            <p>
+                Maintenance records must not contain passwords.
+                Configuration backups and other sensitive technical
+                records must be kept in approved restricted locations.
+            </p>
+        </section>
+
+        <section id="examples" class="policy-section">
+            <h3>6. Workplace examples</h3>
+
+            <p>Select an example to see how the procedure applies.</p>
+
+            <details class="example-card">
+                <summary>
+                    A change to the Cape Town router could affect every branch.
+                </summary>
+
+                <p>
+                    The Network Administrator should identify the
+                    affected connections, back up the configuration
+                    and prepare a rollback method. The IT Manager
+                    must approve disruptive work, and branch contacts
+                    should receive advance notice.
+                </p>
+
+                <p>
+                    After the change, the administrator should test
+                    the affected paths and confirm with branch
+                    users that required services remain accessible.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    The daily review shows that a backup failed.
+                </summary>
+
+                <p>
+                    The Network Administrator should investigate
+                    the failure, record its cause where known
+                    and take approved corrective action.
+                    The issue should not be treated as resolved
+                    until the relevant result has been checked.
+                </p>
+
+                <p>
+                    If the failure leaves important information
+                    without adequate recovery coverage, the
+                    IT Manager must be informed.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    A Polokwane employee leaves the company.
+                </summary>
+
+                <p>
+                    The relevant manager should send an authorised
+                    instruction to IT. The IT Support Technician
+                    updates access and equipment records according
+                    to the approved timing and retains a record
+                    of the actions completed.
+                </p>
+
+                <p>
+                    This is handled when the staff change occurs,
+                    rather than waiting for the quarterly access review.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    An update causes an application to stop working.
+                </summary>
+
+                <p>
+                    The technician should stop further changes,
+                    record the symptoms and inform the IT Manager.
+                    The approved rollback method should be used
+                    where appropriate, followed by checks with
+                    affected users.
+                </p>
+
+                <p>
+                    The failed change and any further investigation
+                    must be documented before another attempt.
+                </p>
+            </details>
+        </section>
+
+        <!-- Uses the existing checklist feature in script.js -->
+        <section id="readiness"
+                 class="policy-section checklist-section">
+            <h3>7. Maintenance preparation checklist</h3>
+
+            <p>
+                Use this as a personal preparation aid.
+                Checking these boxes does not authorise work
+                or create an official maintenance record.
+                Your selections are not saved by this website.
+            </p>
+
+            <div class="policy-checklist">
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have identified the affected equipment,
+                        services and users.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have checked the required approval
+                        and user-notification arrangements.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have prepared the required backup
+                        and rollback information.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have identified the tests and records
+                        needed after the work.
+                    </label>
+                </p>
+            </div>
+
+            <p id="checklist-progress" role="status" hidden>
+                0 of 4 items checked.
+            </p>
+
+            <button type="button"
+                    id="reset-checklist"
+                    class="secondary-button"
+                    hidden>
+                Reset checklist
+            </button>
+        </section>
+
+        <section class="next-guide">
+            <h3>Has a maintenance issue become a major disruption?</h3>
+
+            <p>
+                Report the problem and refer to the recovery plan
+                for the relevant responsibilities and restoration steps.
+            </p>
+
+            <div class="hero-actions">
+                <a href="helpdesk.html" class="action-link">
+                    Read the help desk procedure &rarr;
+                </a>
+
+                <a href="disaster-recovery.html" class="action-link">
+                    View disaster recovery guidance &rarr;
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>

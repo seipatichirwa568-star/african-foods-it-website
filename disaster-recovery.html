@@ -3,91 +3,796 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disaster Recovery Plan</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods disaster recovery procedures for outages, equipment failures, cyberattacks and data loss.">
+
+    <title>Disaster Recovery | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>Disaster Recovery Plan</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</nav>
+    <!-- Main website navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="security.html">IT Security</a>
+        <a href="acceptable-use.html">Acceptable Use</a>
+        <a href="acquisition.html">Equipment</a>
+        <a href="helpdesk.html">Help Desk</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="disaster-recovery.html"
+           class="active"
+           aria-current="page">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <h2>Disaster Recovery Plan</h2>
+        <!-- Page introduction -->
+        <section class="page-banner">
+            <p class="section-label">PREPARE. RESPOND. RECOVER.</p>
 
-    <p>
-        The disaster recovery plan provides basic actions that the
-        IT department can follow when a serious IT problem occurs.
-    </p>
+            <h2>Be ready when normal work is interrupted.</h2>
 
-    <table>
-        <tr>
-            <th>Situation</th>
-            <th>Recovery Action</th>
-        </tr>
+            <p>
+                A serious IT incident can interrupt sales, shipping,
+                stock control and communication between branches.
+                This plan explains who should respond and how
+                African Foods should restore its services.
+            </p>
 
-        <tr>
-            <td>Server failure</td>
-            <td>Restore the server and recover the latest verified backup.</td>
-        </tr>
+            <div class="policy-details">
+                <p>
+                    <strong>Applies to:</strong>
+                    Cape Town, Durban, Gqeberha and Polokwane
+                </p>
 
-        <tr>
-            <td>Hardware failure</td>
-            <td>Replace the failed equipment with available spare equipment.</td>
-        </tr>
+                <p>
+                    <strong>Recovery coordinator:</strong> IT Manager
+                </p>
 
-        <tr>
-            <td>Internet outage</td>
-            <td>Contact the ISP and use an alternative connection where available.</td>
-        </tr>
+                <p>
+                    <strong>Status:</strong>
+                    Proposed plan for the African Foods assignment
+                </p>
+            </div>
 
-        <tr>
-            <td>Power failure</td>
-            <td>Use UPS equipment and safely shut down critical systems.</td>
-        </tr>
+            <button type="button"
+                    id="print-policy"
+                    class="action-button"
+                    hidden>
+                Print this recovery plan
+            </button>
+        </section>
 
-        <tr>
-            <td>Cyberattack</td>
-            <td>Isolate affected devices and begin security recovery procedures.</td>
-        </tr>
+        <section class="page-shortcuts">
+            <h3>On this page</h3>
 
-        <tr>
-            <td>Data loss</td>
-            <td>Restore information from the latest verified backup.</td>
-        </tr>
+            <ul>
+                <li><a href="#first-response">First response</a></li>
+                <li><a href="#responsibilities">Recovery responsibilities</a></li>
+                <li><a href="#recovery-plans">Incident recovery plans</a></li>
+                <li><a href="#temporary-work">Temporary working arrangements</a></li>
+                <li><a href="#backups">Backups and preparation</a></li>
+                <li><a href="#recovery-checks">Checks before reopening services</a></li>
+                <li><a href="#readiness">Readiness checklist</a></li>
+            </ul>
+        </section>
 
-        <tr>
-            <td>Fire or flood</td>
-            <td>Protect staff first and activate the company's recovery arrangements.</td>
-        </tr>
-    </table>
+        <section id="first-response" class="policy-section">
+            <h3>1. First response and recovery priorities</h3>
 
-    <h3>Priority</h3>
+            <div class="important-notice">
+                <h4>People come first</h4>
 
-    <p>
-        The first priority during a disaster is to protect employees.
-        Once the situation is safe, the IT department can assess the
-        damage and restore important services.
-    </p>
+                <p>
+                    Follow the company's emergency and evacuation
+                    instructions. Employees must not enter an unsafe
+                    building or handle damaged electrical equipment
+                    to recover company data.
+                </p>
+            </div>
 
-</main>
+            <ol class="procedure-list">
+                <li>
+                    <strong>Report the incident.</strong>
+                    Tell the help desk or IT Manager which branch,
+                    devices and services are affected. Use an available
+                    approved alternative channel if the network is down.
+                </li>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+                <li>
+                    <strong>Assess the impact.</strong>
+                    The IT team checks whether the problem affects
+                    one employee, one branch or central services
+                    used by several locations.
+                </li>
+
+                <li>
+                    <strong>Coordinate the response.</strong>
+                    The IT Manager decides whether to activate the
+                    recovery plan, assigns responsibilities and
+                    updates company management and branch contacts.
+                </li>
+
+                <li>
+                    <strong>Contain further damage.</strong>
+                    Authorised staff take appropriate action to
+                    prevent the incident from spreading or causing
+                    additional loss.
+                </li>
+
+                <li>
+                    <strong>Restore services in a planned order.</strong>
+                    Restore the infrastructure needed by critical
+                    applications before testing the applications
+                    and employee access that depend on it.
+                </li>
+
+                <li>
+                    <strong>Verify before returning to normal work.</strong>
+                    Technical staff and authorised users check that
+                    services and information are usable before
+                    the IT Manager confirms their release.
+                </li>
+            </ol>
+
+            <p>
+                The Cape Town infrastructure requires particular
+                attention because other branches depend on its
+                central services. The exact recovery order must
+                reflect the incident and the affected business tasks.
+            </p>
+        </section>
+
+        <section id="responsibilities" class="policy-section">
+            <h3>2. Who is responsible during recovery?</h3>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>
+                        Proposed recovery roles for African Foods
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Role</th>
+                            <th scope="col">Responsibility</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">IT Manager</th>
+                            <td>
+                                Coordinates the response, assigns work,
+                                communicates with management and reviews
+                                the checks before services are reopened.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Network Administrator</th>
+                            <td>
+                                Investigates network and infrastructure
+                                faults, restores approved configurations
+                                and coordinates external connection faults
+                                with the service provider.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">IT Support Technician</th>
+                            <td>
+                                Records reports, keeps users informed,
+                                assists with workstation recovery and
+                                confirms that employees can access
+                                restored services.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Junior IT Support Technician</th>
+                            <td>
+                                Assists with authorised equipment checks,
+                                records and workstation setup under
+                                supervision. Escalates tasks outside
+                                assigned permissions.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Branch contact</th>
+                            <td>
+                                Reports the local impact, coordinates
+                                access for technicians and shares
+                                approved updates with branch staff.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Operations Officer</th>
+                            <td>
+                                Coordinates temporary business procedures
+                                and the reconciliation of work completed
+                                while systems were unavailable.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Company management</th>
+                            <td>
+                                Approves emergency expenditure and
+                                significant temporary business arrangements.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Approved service provider</th>
+                            <td>
+                                Provides specialist assistance where
+                                recovery requires skills or access
+                                beyond the internal team's capability.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Expandable plans work through native HTML -->
+        <section id="recovery-plans" class="policy-section">
+            <h3>3. Incident recovery plans</h3>
+
+            <p>
+                Select a situation to read its proposed response.
+                These instructions guide authorised staff; this
+                website does not perform recovery actions.
+            </p>
+
+            <details class="example-card">
+                <summary>Server or database failure</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    A Cape Town server failure could prevent employees
+                    at several branches from accessing central
+                    information and applications.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    IT Manager, the responsible administrator and
+                    an approved specialist where required.
+                </p>
+
+                <ol>
+                    <li>
+                        Record the affected services, symptoms and
+                        users, and notify branch contacts.
+                    </li>
+                    <li>
+                        Investigate whether the fault involves power,
+                        hardware, storage, connectivity or the
+                        hosted service.
+                    </li>
+                    <li>
+                        Repair the fault or prepare an approved
+                        replacement environment as appropriate.
+                    </li>
+                    <li>
+                        Where restoration is needed, use a suitable
+                        verified backup and record its recovery point.
+                    </li>
+                    <li>
+                        Ask authorised users to check that the
+                        application opens, expected records are
+                        available and normal tasks can be completed.
+                    </li>
+                    <li>
+                        Identify and reconcile missing transactions
+                        using available records. Report any
+                        unrecoverable information.
+                    </li>
+                </ol>
+            </details>
+
+            <details class="example-card">
+                <summary>Hardware or network equipment failure</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    A failed workstation may affect one employee,
+                    while a failed switch or router may disconnect
+                    an entire branch.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    IT Support Technician for workstations and
+                    Network Administrator for network equipment.
+                </p>
+
+                <ol>
+                    <li>
+                        Identify the affected equipment and confirm
+                        the extent of the disruption.
+                    </li>
+                    <li>
+                        Carry out approved checks and remove unsafe
+                        or failed equipment from use.
+                    </li>
+                    <li>
+                        Repair the item or use a compatible spare
+                        where available. Obtain purchasing approval
+                        if replacement equipment is required.
+                    </li>
+                    <li>
+                        Restore approved settings and required
+                        software or network configurations.
+                    </li>
+                    <li>
+                        Test the intended functions with affected
+                        users and update the asset and incident records.
+                    </li>
+                </ol>
+            </details>
+
+            <details class="example-card">
+                <summary>Internet or inter-branch connection outage</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    A branch may lose access to remote services even
+                    when its local computers are still working.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    Network Administrator and the relevant
+                    service provider.
+                </p>
+
+                <ol>
+                    <li>
+                        Determine whether the failure affects local
+                        networking, internet access or the connection
+                        to central company services.
+                    </li>
+                    <li>
+                        Check device status, physical connections
+                        and the relevant communication paths.
+                    </li>
+                    <li>
+                        Report an external connection fault to the
+                        provider and keep the incident reference
+                        and progress updates.
+                    </li>
+                    <li>
+                        Use an alternative connection only if it is
+                        available, approved and suitable for secure
+                        access to the required services.
+                    </li>
+                    <li>
+                        After restoration, test access from the
+                        affected branch and confirm that staff can
+                        resume their business tasks.
+                    </li>
+                </ol>
+            </details>
+
+            <details class="example-card">
+                <summary>Power interruption</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    Computers, network equipment and central
+                    services may become unavailable.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    IT Manager and authorised technical staff,
+                    working with the responsible site personnel.
+                </p>
+
+                <ol>
+                    <li>
+                        Protect employee safety and report the
+                        interruption through an available channel.
+                    </li>
+                    <li>
+                        Where suitable UPS equipment is provided,
+                        use it within its capacity to support an
+                        orderly shutdown or short-term operation.
+                    </li>
+                    <li>
+                        Shut down affected systems safely when
+                        continued operation is not possible.
+                    </li>
+                    <li>
+                        Avoid repeatedly restarting devices while
+                        the power supply remains unstable.
+                    </li>
+                    <li>
+                        Once power is stable, restore infrastructure
+                        in a controlled order.
+                    </li>
+                    <li>
+                        Check applications, network access, backup
+                        jobs and any work interrupted by the outage.
+                    </li>
+                </ol>
+            </details>
+
+            <details class="example-card">
+                <summary>Cyberattack or suspected malware</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    An affected device or account could put company
+                    information and other systems at risk.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    IT Manager, authorised technical staff and
+                    approved security specialists where required.
+                </p>
+
+                <ol>
+                    <li>
+                        Report unusual activity immediately and
+                        follow authorised IT instructions.
+                    </li>
+                    <li>
+                        Isolate affected devices or accounts as
+                        appropriate to limit further spread.
+                    </li>
+                    <li>
+                        Retain relevant logs and incident details.
+                        Avoid unnecessary changes that could
+                        remove useful evidence.
+                    </li>
+                    <li>
+                        Investigate and address the cause before
+                        reconnecting affected systems.
+                    </li>
+                    <li>
+                        Recover using trusted configurations and
+                        backups assessed as suitable for restoration.
+                    </li>
+                    <li>
+                        Verify services, monitor for recurring
+                        activity and record improvements needed
+                        to reduce the chance of another incident.
+                    </li>
+                </ol>
+            </details>
+
+            <details class="example-card">
+                <summary>Accidental deletion or corrupted information</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    Employees may lose access to documents or
+                    records required for their work.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    An authorised technician and the owner of
+                    the affected information.
+                </p>
+
+                <ol>
+                    <li>
+                        Report the file or system, storage location
+                        and approximate time the loss occurred.
+                    </li>
+                    <li>
+                        Avoid further changes to the affected
+                        information until IT provides guidance.
+                    </li>
+                    <li>
+                        Identify an appropriate backup or
+                        available previous version.
+                    </li>
+                    <li>
+                        Where possible, restore to a separate
+                        location first so that current information
+                        is not overwritten without checking.
+                    </li>
+                    <li>
+                        Ask the information owner to confirm
+                        that the recovered content is correct.
+                    </li>
+                    <li>
+                        Record the recovery result, including
+                        any information that remains missing.
+                    </li>
+                </ol>
+            </details>
+
+            <details class="example-card">
+                <summary>Fire, flood or loss of access to a building</summary>
+
+                <p>
+                    <strong>Business impact:</strong>
+                    Staff may lose safe access to equipment or
+                    an entire company location.
+                </p>
+
+                <p>
+                    <strong>Responsible roles:</strong>
+                    Company management and the IT Manager,
+                    following emergency authority instructions.
+                </p>
+
+                <ol>
+                    <li>
+                        Follow emergency and evacuation instructions.
+                        Do not enter an unsafe building to recover
+                        equipment or documents.
+                    </li>
+                    <li>
+                        Assess damage only when the appropriate
+                        authorities permit access.
+                    </li>
+                    <li>
+                        Identify the systems that need to be
+                        restored and the equipment required.
+                    </li>
+                    <li>
+                        Use recoverable backups and documentation
+                        held outside the affected location.
+                    </li>
+                    <li>
+                        Establish an approved temporary working
+                        arrangement and test replacement equipment
+                        and connectivity before use.
+                    </li>
+                    <li>
+                        Communicate service limitations and
+                        reconcile work recorded during the disruption.
+                    </li>
+                </ol>
+            </details>
+        </section>
+
+        <section id="temporary-work" class="policy-section">
+            <h3>4. Temporary working arrangements</h3>
+
+            <p>
+                The Operations Officer should coordinate an approved
+                way to record essential work while systems are
+                unavailable. For example, staff may use controlled
+                order records rather than keeping separate,
+                untracked notes.
+            </p>
+
+            <ul class="policy-list">
+                <li>
+                    Give each temporary record a unique reference,
+                    date and responsible employee.
+                </li>
+
+                <li>
+                    Record the information needed for later entry
+                    without collecting unnecessary confidential details.
+                </li>
+
+                <li>
+                    Keep temporary records secure and accessible
+                    only to authorised employees.
+                </li>
+
+                <li>
+                    Do not assume that stock availability or an
+                    order's status is confirmed when the relevant
+                    system cannot be checked.
+                </li>
+
+                <li>
+                    After restoration, reconcile and enter outstanding
+                    work carefully to avoid duplicate orders or
+                    incorrect stock records.
+                </li>
+            </ul>
+        </section>
+
+        <section id="backups" class="policy-section">
+            <h3>5. Backups and recovery preparation</h3>
+
+            <p>
+                Our group proposes protected backups of critical
+                company information and network device configurations,
+                including a recoverable copy outside the main site.
+                Access must be limited to authorised staff.
+            </p>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Identify what needs protection.</strong>
+                    Include critical records, required system
+                    information and approved device configurations.
+                </li>
+
+                <li>
+                    <strong>Agree on recovery targets.</strong>
+                    Management and IT must decide how much downtime
+                    and data loss each critical service can tolerate.
+                    These decisions guide backup frequency and
+                    recovery resources.
+                </li>
+
+                <li>
+                    <strong>Check backup results.</strong>
+                    Investigate failed or incomplete backup jobs
+                    and keep a record of corrective action.
+                </li>
+
+                <li>
+                    <strong>Test restoration.</strong>
+                    Perform the proposed quarterly sample restoration
+                    test in a safe environment and record whether the
+                    recovered information or service is usable.
+                </li>
+
+                <li>
+                    <strong>Keep recovery information accessible.</strong>
+                    Maintain current network diagrams, configuration
+                    records and approved provider contact details
+                    outside the affected systems.
+                </li>
+
+                <li>
+                    <strong>Review after changes or incidents.</strong>
+                    Update the plan when equipment, responsibilities
+                    or business requirements change.
+                </li>
+            </ul>
+
+            <p>
+                A successful backup message alone does not prove
+                that a working service can be restored. Recovery
+                targets must not be presented as guaranteed times
+                until the arrangements have been tested.
+            </p>
+        </section>
+
+        <section id="recovery-checks" class="policy-section">
+            <h3>6. Checks before reopening services</h3>
+
+            <p>
+                The IT Manager should confirm that the relevant
+                technical and business checks have been completed
+                before normal operations resume.
+            </p>
+
+            <ul class="policy-list">
+                <li>
+                    The immediate cause has been addressed or
+                    an approved temporary solution is in place.
+                </li>
+
+                <li>
+                    Required infrastructure and application
+                    connections are available.
+                </li>
+
+                <li>
+                    Authorised employees can sign in and carry
+                    out the affected business tasks.
+                </li>
+
+                <li>
+                    Restored information has been checked by
+                    its owner and any missing records identified.
+                </li>
+
+                <li>
+                    Outstanding transactions have been reconciled
+                    or assigned for follow-up.
+                </li>
+
+                <li>
+                    Branch contacts have received an update
+                    explaining restored services and remaining
+                    limitations.
+                </li>
+
+                <li>
+                    The incident record includes actions taken,
+                    recovery results and improvements required.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Uses the shared checklist feature in script.js -->
+        <section id="readiness"
+                 class="policy-section checklist-section">
+            <h3>7. Personal readiness checklist</h3>
+
+            <p>
+                Use this checklist to review your understanding.
+                Checking an item does not confirm that a real
+                recovery action has been completed. Your selections
+                are not saved by this website.
+            </p>
+
+            <div class="policy-checklist">
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand that employee safety comes first.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I know that incidents must be reported through
+                        an available approved channel.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand which roles coordinate and
+                        carry out recovery.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand that recovered services and
+                        information must be checked before normal use.
+                    </label>
+                </p>
+            </div>
+
+            <p id="checklist-progress" role="status" hidden>
+                0 of 4 items checked.
+            </p>
+
+            <button type="button"
+                    id="reset-checklist"
+                    class="secondary-button"
+                    hidden>
+                Reset checklist
+            </button>
+        </section>
+
+        <section class="next-guide">
+            <h3>Prevent problems through regular maintenance.</h3>
+
+            <p>
+                View the proposed maintenance schedule for routine
+                checks, backup reviews and change responsibilities.
+            </p>
+
+            <a href="maintenance.html" class="action-link">
+                Read the maintenance procedure &rarr;
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>

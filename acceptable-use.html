@@ -3,71 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceptable Use Policy</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods acceptable use policy for company computers, email, internet and shared resources.">
+
+    <title>Acceptable Use | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>Acceptable Use Policy</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</nav>
+    <!-- Main website navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="security.html">IT Security</a>
+        <a href="acceptable-use.html"
+           class="active"
+           aria-current="page">Acceptable Use</a>
+        <a href="acquisition.html">Equipment</a>
+        <a href="helpdesk.html">Help Desk</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="disaster-recovery.html">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <h2>Acceptable Use Policy</h2>
+        <!-- Page introduction -->
+        <section class="page-banner">
+            <p class="section-label">WORK RESPONSIBLY</p>
 
-    <p>
-        This policy explains how employees should use company
-        computers, internet access, email and other IT resources.
-    </p>
+            <h2>Good technology starts with responsible use.</h2>
 
-    <h3>Employees Should:</h3>
+            <p>
+                Our computers, email and network help employees process
+                orders, manage stock and communicate between branches.
+                This policy explains how these resources should be used.
+            </p>
 
-    <ul>
-        <li>Use company IT resources mainly for work activities.</li>
-        <li>Use approved websites and online services.</li>
-        <li>Use company email professionally.</li>
-        <li>Be careful when opening unknown links and attachments.</li>
-        <li>Keep company information confidential.</li>
-        <li>Report suspicious activity to the IT department.</li>
-    </ul>
+            <div class="policy-details">
+                <p>
+                    <strong>Applies to:</strong>
+                    Cape Town, Durban, Gqeberha and Polokwane
+                </p>
 
-    <h3>Employees Should Not:</h3>
+                <p>
+                    <strong>Policy owner:</strong> IT Manager
+                </p>
 
-    <ul>
-        <li>Use company systems for illegal activities.</li>
-        <li>Install unauthorised software.</li>
-        <li>Attempt to access systems without permission.</li>
-        <li>Download harmful software.</li>
-        <li>Attack or damage other computer systems.</li>
-        <li>Share company passwords.</li>
-    </ul>
+                <p>
+                    <strong>Status:</strong>
+                    Proposed policy for the African Foods assignment
+                </p>
+            </div>
 
-    <h3>Monitoring</h3>
+            <button type="button"
+                    id="print-policy"
+                    class="action-button"
+                    hidden>
+                Print this policy
+            </button>
+        </section>
 
-    <p>
-        The IT department may monitor company systems when necessary
-        to maintain security and make sure IT resources are being
-        used appropriately.
-    </p>
+        <!-- Links to sections on this page -->
+        <section class="page-shortcuts">
+            <h3>On this page</h3>
 
-</main>
+            <ul>
+                <li><a href="#purpose">Purpose and scope</a></li>
+                <li><a href="#responsible-use">Responsible use</a></li>
+                <li><a href="#prohibited-use">Prohibited activities</a></li>
+                <li><a href="#examples">Workplace examples</a></li>
+                <li><a href="#reporting">Reporting problems</a></li>
+                <li><a href="#monitoring">Monitoring and accountability</a></li>
+                <li><a href="#policy-check">Personal checklist</a></li>
+            </ul>
+        </section>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+        <section id="purpose" class="policy-section">
+            <h3>1. Purpose and scope</h3>
+
+            <p>
+                This policy applies to employees and authorised contractors
+                using African Foods computers, applications, email,
+                internet access, printers and shared storage.
+            </p>
+
+            <p>
+                Its purpose is to support business activities, protect
+                company information and explain the responsibilities
+                of each person using these resources.
+            </p>
+        </section>
+
+        <section id="responsible-use" class="policy-section">
+            <h3>2. Responsible use of company resources</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Use technology for authorised work.</strong>
+                    Company resources should primarily support activities
+                    such as sales, shipping, stock control, payroll and
+                    communication between branches.
+                </li>
+
+                <li>
+                    <strong>Use approved applications.</strong>
+                    Employees must use software approved for their duties
+                    and follow its licence conditions. Requests for
+                    additional software must be referred to IT.
+                </li>
+
+                <li>
+                    <strong>Communicate professionally.</strong>
+                    Check the recipient, message and attachments before
+                    sending an email, especially when sharing customer,
+                    order or employee information.
+                </li>
+
+                <li>
+                    <strong>Respect access limits.</strong>
+                    Only use information needed for your work. Access to
+                    a shared folder does not give permission to use its
+                    contents for unrelated purposes.
+                </li>
+
+                <li>
+                    <strong>Protect confidential information.</strong>
+                    Keep business documents in approved storage locations.
+                    Obtain approval before sharing company records with
+                    an external person or service.
+                </li>
+
+                <li>
+                    <strong>Use shared equipment responsibly.</strong>
+                    Collect confidential printouts promptly. Avoid
+                    unnecessary printing and duplicate files that
+                    take up shared storage.
+                </li>
+
+                <li>
+                    <strong>Follow personal-device rules.</strong>
+                    Personal laptops, phones and storage devices may
+                    access company resources only when authorised
+                    and under the conditions set by IT.
+                </li>
+
+                <li>
+                    <strong>Keep business work available.</strong>
+                    Non-work internet activity must not interrupt duties
+                    or reduce the connection capacity needed by
+                    other employees.
+                </li>
+            </ul>
+        </section>
+
+        <section id="prohibited-use" class="policy-section">
+            <h3>3. Activities that are not allowed</h3>
+
+            <ul class="policy-list">
+                <li>
+                    Sharing passwords, using another employee's account
+                    or attempting to bypass access restrictions.
+                </li>
+
+                <li>
+                    Installing unapproved software, browser extensions
+                    or remote-access tools.
+                </li>
+
+                <li>
+                    Using company resources for illegal activities,
+                    harassment or downloading pirated material.
+                </li>
+
+                <li>
+                    Uploading company records to personal email,
+                    personal cloud storage or public websites
+                    without approval.
+                </li>
+
+                <li>
+                    Deliberately accessing, changing or deleting
+                    information without authorisation.
+                </li>
+
+                <li>
+                    Disabling security controls or connecting
+                    unapproved equipment to the company network.
+                </li>
+
+                <li>
+                    Using company equipment to attack or disrupt
+                    another device, network or organisation.
+                </li>
+            </ul>
+        </section>
+
+        <!-- HTML details elements provide expandable examples -->
+        <section id="examples" class="policy-section">
+            <h3>4. What does this mean at work?</h3>
+
+            <p>Select an example to read the appropriate action.</p>
+
+            <details class="example-card">
+                <summary>
+                    A Durban salesperson wants to email a customer list
+                    to their personal account.
+                </summary>
+
+                <p>
+                    The salesperson should not transfer the list without
+                    approval. They should ask their manager and IT for
+                    an approved way to access the information needed
+                    for work.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    A shipping clerk receives an unexpected attachment
+                    about an order.
+                </summary>
+
+                <p>
+                    The clerk should check whether the message is expected
+                    and report anything suspicious through the approved
+                    support channel. They should not open the attachment
+                    simply because it mentions a delivery.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    A Polokwane employee wants to install a free application.
+                </summary>
+
+                <p>
+                    The employee should explain the business need to IT
+                    before installing it. IT must assess compatibility,
+                    security and licence conditions. An application being
+                    free does not automatically make it suitable.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    An employee notices confidential documents at a printer.
+                </summary>
+
+                <p>
+                    The employee should avoid reading or sharing the
+                    documents and notify the responsible person.
+                    Employees printing confidential material should
+                    collect it promptly.
+                </p>
+            </details>
+        </section>
+
+        <section id="reporting" class="policy-section">
+            <h3>5. Reporting mistakes and suspected misuse</h3>
+
+            <p>
+                Report misdirected emails, accidental disclosure,
+                suspicious downloads and suspected misuse promptly.
+                Explain what happened, when it happened and which
+                device or service was involved.
+            </p>
+
+            <p>
+                Employees must not hide incidents or attempt an
+                unauthorised repair. The help desk records the report
+                and escalates it to the IT Manager where appropriate.
+            </p>
+
+            <a href="helpdesk.html" class="action-link">
+                Read the help desk procedure &rarr;
+            </a>
+        </section>
+
+        <section id="monitoring" class="policy-section">
+            <h3>6. Monitoring and accountability</h3>
+
+            <p>
+                Authorised monitoring should be limited to legitimate
+                operational and security purposes and follow the
+                company's approved privacy and employment procedures.
+            </p>
+
+            <p>
+                Employees are responsible for their use of company
+                resources. The IT Manager refers suspected misuse
+                to the appropriate manager for review. Any further
+                action must follow approved company procedures.
+            </p>
+        </section>
+
+        <!-- The external script handles progress and reset -->
+        <section id="policy-check"
+                 class="policy-section checklist-section">
+            <h3>7. Check your understanding</h3>
+
+            <p>
+                Use this personal checklist after reading the policy.
+                It does not submit an acknowledgement or record
+                formal acceptance. Your selections are not saved
+                by this website.
+            </p>
+
+            <div class="policy-checklist">
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand which activities are permitted.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I know that software and external sharing
+                        may require approval.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I know how to report mistakes or suspected misuse.
+                    </label>
+                </p>
+            </div>
+
+            <p id="checklist-progress" role="status" hidden>
+                0 of 3 items checked.
+            </p>
+
+            <button type="button"
+                    id="reset-checklist"
+                    class="secondary-button"
+                    hidden>
+                Reset checklist
+            </button>
+        </section>
+
+        <section class="next-guide">
+            <h3>Need guidance on protecting your account?</h3>
+
+            <p>
+                The IT security policy explains account protection,
+                device security and incident reporting.
+            </p>
+
+            <a href="security.html" class="action-link">
+                Read the IT security policy &rarr;
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>

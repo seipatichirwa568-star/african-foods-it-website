@@ -3,74 +3,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Security Policy</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods IT security policy covering accounts, devices, information protection and incident reporting.">
+
+    <title>IT Security | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>IT Security Policy</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</nav>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="security.html"
+           class="active"
+           aria-current="page">IT Security</a>
+        <a href="acceptable-use.html">Acceptable Use</a>
+        <a href="acquisition.html">Equipment</a>
+        <a href="helpdesk.html">Help Desk</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="disaster-recovery.html">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <h2>IT Security Policy</h2>
+        <section class="page-banner">
+            <p class="section-label">PROTECT YOUR ACCOUNT. PROTECT YOUR WORK.</p>
 
-    <p>
-        The IT Security Policy provides employees with basic rules
-        for protecting company systems and information.
-    </p>
+            <h2>Small habits help protect the whole company.</h2>
 
-    <h3>Employees Must:</h3>
+            <p>
+                Employees across African Foods use technology to
+                handle orders, stock, customer information and
+                administrative records. This policy explains how
+                accounts, devices and information should be protected.
+            </p>
 
-    <ul>
-        <li>Use strong passwords.</li>
-        <li>Keep passwords private.</li>
-        <li>Lock computers when leaving their workstation.</li>
-        <li>Report suspicious emails or files.</li>
-        <li>Only access information required for their work.</li>
-        <li>Keep company devices physically secure.</li>
-        <li>Report lost or stolen devices to the IT department.</li>
-        <li>Install required security updates.</li>
-        <li>Use approved company software.</li>
-        <li>Follow backup and data protection procedures.</li>
-    </ul>
+            <div class="policy-details">
+                <p>
+                    <strong>Applies to:</strong>
+                    Cape Town, Durban, Gqeberha and Polokwane
+                </p>
 
-    <h3>Employees Must Not:</h3>
+                <p>
+                    <strong>Policy owner:</strong> IT Manager
+                </p>
 
-    <ul>
-        <li>Share passwords with other employees.</li>
-        <li>Install unauthorised software.</li>
-        <li>Connect unknown devices to the company network.</li>
-        <li>Attempt to bypass security controls.</li>
-        <li>Access another employee's information without permission.</li>
-        <li>Use company equipment for illegal activities.</li>
-    </ul>
+                <p>
+                    <strong>Status:</strong>
+                    Proposed policy for the African Foods assignment
+                </p>
+            </div>
 
-    <h3>Purpose</h3>
+            <button type="button"
+                    id="print-policy"
+                    class="action-button"
+                    hidden>
+                Print this policy
+            </button>
+        </section>
 
-    <p>
-        These rules help reduce the risk of unauthorised access,
-        malware infections and loss of company information.
-    </p>
+        <section class="page-shortcuts">
+            <h3>On this page</h3>
 
-</main>
+            <ul>
+                <li><a href="#purpose">Purpose and scope</a></li>
+                <li><a href="#accounts">Accounts and access</a></li>
+                <li><a href="#devices">Devices and software</a></li>
+                <li><a href="#information">Company information</a></li>
+                <li><a href="#reporting">Reporting security incidents</a></li>
+                <li><a href="#responsibilities">Responsibilities</a></li>
+                <li><a href="#examples">Workplace examples</a></li>
+                <li><a href="#security-check">Personal checklist</a></li>
+            </ul>
+        </section>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+        <section id="purpose" class="policy-section">
+            <h3>1. Purpose and scope</h3>
+
+            <p>
+                This proposed policy applies to employees,
+                authorised contractors and company devices
+                at all four African Foods locations.
+            </p>
+
+            <p>
+                Its purpose is to reduce unauthorised access,
+                protect business information and explain what
+                employees must do when they notice a possible
+                security problem.
+            </p>
+
+            <p>
+                The IT Manager oversees the policy. IT staff
+                implement approved controls, while employees
+                follow the rules and report concerns promptly.
+            </p>
+        </section>
+
+        <section id="accounts" class="policy-section">
+            <h3>2. Protect accounts and control access</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Use your assigned account.</strong>
+                    Employees must use their own authorised login.
+                    Do not work through another person's account
+                    or allow colleagues to use yours.
+                </li>
+
+                <li>
+                    <strong>Keep passwords private.</strong>
+                    Do not share passwords with colleagues or
+                    include them in emails and support reports.
+                    IT must use an approved account-recovery
+                    process when assistance is needed.
+                </li>
+
+                <li>
+                    <strong>Use unique passwords.</strong>
+                    Follow the company's approved password
+                    requirements and avoid reusing a company
+                    password for personal accounts.
+                </li>
+
+                <li>
+                    <strong>Use additional sign-in protection.</strong>
+                    Where multifactor authentication is enabled,
+                    follow the approved sign-in process. Do not
+                    approve an unexpected authentication request.
+                </li>
+
+                <li>
+                    <strong>Access information according to your duties.</strong>
+                    Access must be approved for the employee's work.
+                    For example, a shipping clerk should not
+                    automatically receive access to confidential
+                    HR or payroll records.
+                </li>
+
+                <li>
+                    <strong>Request access changes properly.</strong>
+                    Managers must notify IT when employees join,
+                    change roles or leave. IT updates access
+                    following an authorised instruction and
+                    records the action.
+                </li>
+            </ul>
+        </section>
+
+        <section id="devices" class="policy-section">
+            <h3>3. Protect devices and use approved software</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Lock your screen.</strong>
+                    Lock the workstation whenever you leave
+                    your desk. On Windows, use
+                    <kbd>Windows</kbd> + <kbd>L</kbd>.
+                </li>
+
+                <li>
+                    <strong>Keep equipment physically secure.</strong>
+                    Protect company laptops and mobile devices
+                    when travelling or working away from the office.
+                    Report lost or stolen equipment immediately.
+                </li>
+
+                <li>
+                    <strong>Install only approved software.</strong>
+                    Ask IT before adding applications, browser
+                    extensions or remote-access tools. Do not
+                    disable company security controls.
+                </li>
+
+                <li>
+                    <strong>Use authorised connections.</strong>
+                    Do not connect unknown storage devices or
+                    unapproved equipment to company systems.
+                    Follow IT instructions for wireless and
+                    remote access.
+                </li>
+
+                <li>
+                    <strong>Cooperate with updates.</strong>
+                    IT must manage approved updates and maintenance.
+                    Employees should follow the communicated
+                    instructions and avoid interrupting installations
+                    without guidance.
+                </li>
+
+                <li>
+                    <strong>Restrict access to infrastructure.</strong>
+                    Only authorised personnel may access servers
+                    and network equipment. Approved visitors
+                    requiring access must be supervised.
+                </li>
+            </ul>
+        </section>
+
+        <section id="information" class="policy-section">
+            <h3>4. Protect company information</h3>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Use approved storage.</strong>
+                    Save business documents in the locations
+                    provided for company work so that approved
+                    access and backup arrangements can apply.
+                </li>
+
+                <li>
+                    <strong>Check before sharing.</strong>
+                    Confirm recipients and permissions before
+                    sending customer, financial or employee records.
+                    Do not transfer these records to personal
+                    accounts or unapproved services.
+                </li>
+
+                <li>
+                    <strong>Handle printed records carefully.</strong>
+                    Collect confidential printouts promptly and
+                    keep them secure when they are not being used.
+                </li>
+
+                <li>
+                    <strong>Be cautious with messages.</strong>
+                    Do not open suspicious links or attachments
+                    or provide information to an unverified sender.
+                    Report concerns through the approved support channel.
+                </li>
+
+                <li>
+                    <strong>Follow backup procedures.</strong>
+                    IT is responsible for approved backup operations.
+                    Employees must keep business information in
+                    approved locations and report missing or
+                    damaged records.
+                </li>
+
+                <li>
+                    <strong>Refer device disposal to IT.</strong>
+                    Company devices must be assessed by authorised
+                    staff before reassignment or disposal so
+                    that company information is handled appropriately.
+                </li>
+            </ul>
+        </section>
+
+        <section id="reporting" class="policy-section">
+            <h3>5. Report security concerns promptly</h3>
+
+            <div class="important-notice">
+                <h4>Do not wait for a small concern to become a bigger incident.</h4>
+
+                <p>
+                    Report suspected account compromise, unexpected
+                    sign-in requests, suspicious messages, missing
+                    devices and accidental information disclosure
+                    through an available approved channel.
+                </p>
+            </div>
+
+            <ol class="procedure-list">
+                <li>
+                    <h4>Describe what happened</h4>
+                    <p>
+                        Provide your branch, the affected device
+                        or account, the time and the symptoms.
+                        Do not include passwords or unnecessary
+                        confidential information.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Follow authorised instructions</h4>
+                    <p>
+                        Allow IT to assess the situation and
+                        guide the response. Avoid installing
+                        unapproved repair tools or making
+                        unrelated changes.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Keep relevant details available</h4>
+                    <p>
+                        Retain information that may help the
+                        investigation and follow IT instructions
+                        about handling suspicious messages or files.
+                        Do not forward harmful attachments to colleagues.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Confirm the outcome</h4>
+                    <p>
+                        Cooperate with authorised checks and
+                        report any recurring symptoms. Resume
+                        affected activities according to the
+                        guidance provided by IT.
+                    </p>
+                </li>
+            </ol>
+
+            <a href="helpdesk.html" class="action-link">
+                Read the help desk procedure &rarr;
+            </a>
+        </section>
+
+        <section id="responsibilities" class="policy-section">
+            <h3>6. Security responsibilities</h3>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>
+                        Proposed responsibilities for applying the security policy
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Role</th>
+                            <th scope="col">Responsibility</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Employees</th>
+                            <td>
+                                Follow approved rules, protect
+                                accounts and devices, and report
+                                suspected security problems promptly.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Department and branch managers</th>
+                            <td>
+                                Confirm appropriate access requirements
+                                and notify IT about staff movements
+                                and business changes.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">IT Support Technician</th>
+                            <td>
+                                Records reports, assists through
+                                approved support processes and
+                                escalates security concerns promptly.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Network Administrator</th>
+                            <td>
+                                Maintains approved network controls,
+                                investigates relevant technical faults
+                                and assists with authorised containment
+                                and recovery.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">IT Manager</th>
+                            <td>
+                                Oversees the policy, coordinates
+                                significant incidents and refers
+                                suspected breaches through approved
+                                management and HR procedures.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                The policy should be reviewed after significant
+                incidents or changes to company systems and
+                working arrangements.
+            </p>
+        </section>
+
+        <section id="examples" class="policy-section">
+            <h3>7. Workplace examples</h3>
+
+            <p>Select an example to read the appropriate action.</p>
+
+            <details class="example-card">
+                <summary>
+                    Someone claiming to be IT asks for your password.
+                </summary>
+
+                <p>
+                    Do not provide it. Verify the request through
+                    the company's approved support channel.
+                    Legitimate account assistance should use
+                    an authorised recovery process rather
+                    than password sharing.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    You receive a sign-in approval request you did not start.
+                </summary>
+
+                <p>
+                    Do not approve the request. Report the unexpected
+                    activity promptly and follow IT instructions
+                    for checking and protecting your account.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    You find a USB drive near the office printer.
+                </summary>
+
+                <p>
+                    Do not connect it to your computer to identify
+                    its owner. Give it to authorised IT staff
+                    and explain where it was found.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    A company laptop is lost while travelling.
+                </summary>
+
+                <p>
+                    Report the loss immediately through an available
+                    approved channel. Provide the device details,
+                    when it was last seen and any other relevant
+                    facts. IT will coordinate the appropriate
+                    account and device response.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    You accidentally email a customer record to the wrong person.
+                </summary>
+
+                <p>
+                    Report the mistake promptly and provide
+                    the relevant message details through an
+                    approved channel. Do not assume that deleting
+                    the message from your own mailbox removes
+                    the recipient's copy.
+                </p>
+            </details>
+        </section>
+
+        <!-- Uses the existing checklist feature in script.js -->
+        <section id="security-check"
+                 class="policy-section checklist-section">
+            <h3>8. Check your understanding</h3>
+
+            <p>
+                This checklist is a personal learning aid.
+                It does not verify your device's security or
+                record formal policy acceptance. Your selections
+                are not saved by this website.
+            </p>
+
+            <div class="policy-checklist">
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand how to protect my account
+                        and keep passwords private.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I know that software, devices and access
+                        must follow approval requirements.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand where company information
+                        should be stored and how it may be shared.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I know that suspicious activity and
+                        accidental disclosure must be reported promptly.
+                    </label>
+                </p>
+            </div>
+
+            <p id="checklist-progress" role="status" hidden>
+                0 of 4 items checked.
+            </p>
+
+            <button type="button"
+                    id="reset-checklist"
+                    class="secondary-button"
+                    hidden>
+                Reset checklist
+            </button>
+        </section>
+
+        <section class="next-guide">
+            <h3>Understand responsible everyday use.</h3>
+
+            <p>
+                The acceptable use policy explains the permitted
+                use of company email, internet access, software
+                and shared resources.
+            </p>
+
+            <a href="acceptable-use.html" class="action-link">
+                Read the acceptable use policy &rarr;
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>

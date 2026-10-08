@@ -3,64 +3,561 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Equipment Acquisition</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+          content="African Foods procedure for requesting, approving, purchasing and recording IT equipment.">
+
+    <title>Equipment Acquisition | African Foods IT</title>
+
+    <!-- External styling and JavaScript -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <h1>African Foods Company Ltd</h1>
-    <p>IT Equipment Acquisition Procedure</p>
-</header>
+    <header>
+        <h1>African Foods Company Ltd</h1>
+        <p>IT Policies and Employee Support</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="security.html">IT Security</a>
-    <a href="acceptable-use.html">Acceptable Use</a>
-    <a href="acquisition.html">Equipment</a>
-    <a href="helpdesk.html">Help Desk</a>
-    <a href="maintenance.html">Maintenance</a>
-    <a href="disaster-recovery.html">Disaster Recovery</a>
-</nav>
+    <!-- Main website navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="security.html">IT Security</a>
+        <a href="acceptable-use.html">Acceptable Use</a>
+        <a href="acquisition.html"
+           class="active"
+           aria-current="page">Equipment</a>
+        <a href="helpdesk.html">Help Desk</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="disaster-recovery.html">Disaster Recovery</a>
+    </nav>
 
-<main>
+    <main id="main-content">
 
-    <h2>IT Equipment Acquisition Procedure</h2>
+        <!-- Page introduction -->
+        <section class="page-banner">
+            <p class="section-label">PLAN. APPROVE. EQUIP.</p>
 
-    <p>
-        When new IT equipment is required, employees should follow
-        the company's equipment acquisition procedure.
-    </p>
+            <h2>The right equipment for the work ahead.</h2>
 
-    <h3>Procedure</h3>
+            <p>
+                New equipment should solve a clear business problem.
+                This procedure explains how African Foods employees
+                request equipment and how each purchase is checked,
+                approved and recorded.
+            </p>
 
-    <ol>
-        <li>Identify the equipment requirement.</li>
-        <li>Submit the request to the IT department.</li>
-        <li>IT checks the technical requirements.</li>
-        <li>Obtain quotations from suitable suppliers.</li>
-        <li>The IT Manager reviews the request.</li>
-        <li>Finance checks the available budget.</li>
-        <li>Management approves the purchase.</li>
-        <li>A purchase order is created.</li>
-        <li>The equipment is delivered.</li>
-        <li>IT configures and tests the equipment.</li>
-        <li>The equipment is recorded in the asset register.</li>
-    </ol>
+            <div class="policy-details">
+                <p>
+                    <strong>Applies to:</strong>
+                    Cape Town, Durban, Gqeberha and Polokwane
+                </p>
 
-    <h3>Purpose</h3>
+                <p>
+                    <strong>Procedure owner:</strong> IT Manager
+                </p>
 
-    <p>
-        This procedure helps prevent unnecessary purchases and makes
-        sure that new equipment is suitable for the existing network.
-    </p>
+                <p>
+                    <strong>Final purchasing approval:</strong>
+                    Company management, after technical and budget reviews
+                </p>
 
-</main>
+                <p>
+                    <strong>Status:</strong>
+                    Proposed procedure for the African Foods assignment
+                </p>
+            </div>
 
-<footer>
-    <p>&copy; 2026 African Foods Company Ltd - IT Department</p>
-</footer>
+            <button type="button"
+                    id="print-policy"
+                    class="action-button"
+                    hidden>
+                Print this procedure
+            </button>
+        </section>
+
+        <!-- Links to sections on this page -->
+        <section class="page-shortcuts">
+            <h3>On this page</h3>
+
+            <ul>
+                <li><a href="#purpose">Purpose and scope</a></li>
+                <li><a href="#request-details">Prepare your request</a></li>
+                <li><a href="#procedure">Acquisition procedure</a></li>
+                <li><a href="#responsibilities">Who is responsible?</a></li>
+                <li><a href="#examples">Workplace examples</a></li>
+                <li><a href="#records">Records and handover</a></li>
+                <li><a href="#request-check">Preparation checklist</a></li>
+            </ul>
+        </section>
+
+        <section id="purpose" class="policy-section">
+            <h3>1. Purpose and scope</h3>
+
+            <p>
+                This procedure covers requests for computers, printers,
+                network equipment, accessories and software licences.
+                It applies to new purchases, replacements and upgrades
+                across all four locations.
+            </p>
+
+            <p>
+                The purpose is to control spending, avoid unnecessary
+                purchases and make sure that equipment is suitable
+                for the company's applications and network.
+            </p>
+
+            <p>
+                Employees must obtain the required approval before
+                placing an order or committing company funds.
+                An urgent request still needs authorised approval.
+            </p>
+        </section>
+
+        <section id="request-details" class="policy-section">
+            <h3>2. Prepare your equipment request</h3>
+
+            <p>
+                Give your manager and IT enough information to assess
+                the request. Include the following details:
+            </p>
+
+            <ul class="policy-list">
+                <li>
+                    <strong>Requester:</strong>
+                    Your name, department and branch.
+                </li>
+
+                <li>
+                    <strong>Equipment needed:</strong>
+                    The type of item and quantity required.
+                </li>
+
+                <li>
+                    <strong>Intended user:</strong>
+                    The employee or team that will use the equipment.
+                </li>
+
+                <li>
+                    <strong>Business reason:</strong>
+                    Explain the work the equipment must support and
+                    the problem with the current arrangement.
+                </li>
+
+                <li>
+                    <strong>Required date:</strong>
+                    State when the equipment is needed and explain
+                    any time-sensitive business requirement.
+                </li>
+
+                <li>
+                    <strong>Existing asset:</strong>
+                    For a replacement or upgrade, include the current
+                    asset number, condition and relevant support
+                    ticket reference, where available.
+                </li>
+
+                <li>
+                    <strong>Application requirements:</strong>
+                    Identify the approved applications or services
+                    that the equipment must support.
+                </li>
+            </ul>
+        </section>
+
+        <section id="procedure" class="policy-section">
+            <h3>3. Equipment acquisition procedure</h3>
+
+            <ol class="procedure-list">
+                <li>
+                    <h4>Identify and document the need</h4>
+                    <p>
+                        The requesting employee explains what is needed
+                        and how it will support their work. A request
+                        should describe the business problem rather
+                        than only name a preferred product.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Obtain the manager's confirmation</h4>
+                    <p>
+                        The department or branch manager checks that
+                        the request is necessary and confirms the
+                        intended user and required date. Incomplete
+                        requests are returned for clarification.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Check available alternatives</h4>
+                    <p>
+                        IT checks whether repairing, upgrading or
+                        reassigning existing equipment could meet the
+                        requirement before recommending a new purchase.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Assess technical suitability</h4>
+                    <p>
+                        IT checks compatibility with approved software,
+                        security requirements and network connections.
+                        The assessment must also consider capacity,
+                        support needs and available software licences.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Obtain and compare quotations</h4>
+                    <p>
+                        The employee responsible for purchasing obtains
+                        comparable quotations from suitable suppliers.
+                        The comparison should consider price, warranty,
+                        delivery, support and ongoing operating costs.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Review the technical recommendation</h4>
+                    <p>
+                        The IT Manager reviews the assessment and
+                        recommends an appropriate option. The cheapest
+                        item should only be selected if it meets
+                        the approved requirements.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Confirm budget availability</h4>
+                    <p>
+                        Finance checks that funds are available and
+                        identifies the appropriate budget allocation.
+                        If funding is unavailable, the request must be
+                        revised, deferred or referred for a decision.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Obtain final approval</h4>
+                    <p>
+                        Company management approves or declines the
+                        expenditure after reviewing the business need,
+                        technical recommendation and budget position.
+                        The decision must be recorded.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Place the order</h4>
+                    <p>
+                        The authorised purchasing employee issues the
+                        purchase order using the approved specification,
+                        quantity and supplier. The order must be linked
+                        to the approved request.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Inspect the delivery</h4>
+                    <p>
+                        The receiving employee and IT compare delivered
+                        items with the order. They check quantities,
+                        model details, serial numbers and visible
+                        damage before accepting the equipment.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Configure and test the equipment</h4>
+                    <p>
+                        IT installs approved software and applies the
+                        required settings. Testing must confirm that
+                        the equipment supports its intended tasks,
+                        such as printing or accessing authorised
+                        company applications.
+                    </p>
+                </li>
+
+                <li>
+                    <h4>Record, hand over and close the request</h4>
+                    <p>
+                        IT records the asset, location, assigned user
+                        and warranty details. The user confirms receipt
+                        and receives basic instructions. Purchasing
+                        and acceptance records are retained together.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="responsibilities" class="policy-section">
+            <h3>4. Who is responsible?</h3>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>
+                        Proposed responsibilities for equipment acquisition
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Role</th>
+                            <th scope="col">Responsibility</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Requesting employee</th>
+                            <td>
+                                Explains the requirement, supplies
+                                supporting details and confirms receipt
+                                of the equipment.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Department or branch manager</th>
+                            <td>
+                                Confirms the business need, intended user
+                                and priority of the request.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">IT technical staff</th>
+                            <td>
+                                Assess existing equipment and compatibility,
+                                prepare the device, complete testing
+                                and update asset records.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">IT Manager</th>
+                            <td>
+                                Reviews the technical recommendation
+                                and checks that it supports the
+                                company's IT requirements.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Finance</th>
+                            <td>
+                                Confirms available funding and the
+                                correct budget allocation.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Company management</th>
+                            <td>
+                                Gives final expenditure approval
+                                or records the reason for declining
+                                or deferring the request.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Authorised purchasing employee</th>
+                            <td>
+                                Obtains quotations, issues the approved
+                                purchase order and coordinates
+                                supplier and delivery records.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="examples" class="policy-section">
+            <h3>5. Workplace examples</h3>
+
+            <p>Select an example to see how the procedure applies.</p>
+
+            <details class="example-card">
+                <summary>
+                    A Durban salesperson's computer repeatedly stops working.
+                </summary>
+
+                <p>
+                    The employee should first report the fault to the
+                    help desk. IT investigates and records whether
+                    repair or an upgrade is practical. If replacement
+                    is recommended, the equipment request should refer
+                    to the support record and explain the effect
+                    on processing sales orders.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    The Gqeberha branch needs another workstation.
+                </summary>
+
+                <p>
+                    The branch manager should confirm the intended user
+                    and business need. IT checks whether a suitable
+                    device is already available and assesses software,
+                    licence and connection requirements before
+                    recommending a purchase.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    An employee finds a discounted laptop online.
+                </summary>
+
+                <p>
+                    The employee must not buy it using company funds
+                    without approval. IT must first assess whether the
+                    specification, warranty and support arrangements
+                    meet the company's requirements.
+                </p>
+            </details>
+
+            <details class="example-card">
+                <summary>
+                    Delivered equipment does not match the purchase order.
+                </summary>
+
+                <p>
+                    The receiving employee must record the difference
+                    and notify the authorised purchaser and IT.
+                    The item must not be treated as an accepted
+                    replacement without the required review.
+                </p>
+            </details>
+        </section>
+
+        <section id="records" class="policy-section">
+            <h3>6. Records and equipment handover</h3>
+
+            <p>
+                The completed acquisition record should allow the company
+                to trace why an item was purchased, who approved it
+                and where it is being used.
+            </p>
+
+            <ul class="policy-list">
+                <li>
+                    The original request and business justification.
+                </li>
+
+                <li>
+                    The technical assessment and supplier quotations.
+                </li>
+
+                <li>
+                    Budget confirmation and recorded approvals.
+                </li>
+
+                <li>
+                    The purchase order, delivery details and invoice.
+                </li>
+
+                <li>
+                    The asset number, model, serial number and location.
+                </li>
+
+                <li>
+                    The assigned user, warranty and relevant licence details.
+                </li>
+
+                <li>
+                    Testing results and confirmation of handover.
+                </li>
+            </ul>
+
+            <p>
+                Replaced equipment must be assessed for secure reuse
+                or disposal. Authorised IT staff must handle company
+                data before a device is reassigned or leaves the company.
+            </p>
+        </section>
+
+        <!-- Uses the shared checklist feature in script.js -->
+        <section id="request-check"
+                 class="policy-section checklist-section">
+            <h3>7. Is your request ready?</h3>
+
+            <p>
+                Use this checklist to prepare your request.
+                It does not submit a request or approve a purchase.
+                Your selections are not saved by this website.
+            </p>
+
+            <div class="policy-checklist">
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have included the item, quantity, intended
+                        user and branch.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have explained the business need
+                        and required date.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I have included existing asset and support
+                        details where relevant.
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" class="policy-checkbox">
+                        I understand that technical review, budget
+                        confirmation and final approval are required.
+                    </label>
+                </p>
+            </div>
+
+            <p id="checklist-progress" role="status" hidden>
+                0 of 4 items checked.
+            </p>
+
+            <button type="button"
+                    id="reset-checklist"
+                    class="secondary-button"
+                    hidden>
+                Reset checklist
+            </button>
+        </section>
+
+        <section class="next-guide">
+            <h3>Is your current equipment faulty?</h3>
+
+            <p>
+                Start with the help desk so IT can investigate
+                whether repair or replacement is appropriate.
+            </p>
+
+            <a href="helpdesk.html" class="action-link">
+                Read the help desk procedure &rarr;
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 African Foods Company Ltd — IT Department</p>
+        <p>Academic prototype | Proposed company procedures</p>
+    </footer>
 
 </body>
 </html>
